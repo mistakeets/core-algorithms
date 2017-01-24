@@ -1,13 +1,14 @@
 export default function fibonacci(n) {
-  if (n === 1){
-    return [0]
-  } else if (n >= 2)
-  let fibArray = [0,1]
-  for (var i=1; i <= n, i++){
-
+  const fibStart = [0,1]
+  if (n <= 1){
+    return n
+  } else {
+    function fibBuild(arr, num){
+      if (arr.length === num){
+        return arr
+      } else {
+        return fibBuild(arr.concat([arr[arr.length - 1]+ arr[arr.length-2]]), num)
+      }
+    } return fibBuild(fibStart, n)
   }
-
-
-    return fibArray
-
 }

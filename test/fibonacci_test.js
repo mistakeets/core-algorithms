@@ -12,7 +12,7 @@ describe('fibonacci()', function(){
   })
 
   it('returns an array with the fibonacci numbers to the nth position', function(){
-    expect(fibonacci(0)).to.equal([])
+    expect(fibonacci(1)).to.equal(1)
   })
 
-}
+})
