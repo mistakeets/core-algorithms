@@ -17,7 +17,6 @@ describe('setUnion()', function(){
 
   it('array length is equal to non-duplicate numbers', function(){
     let arrayLength = setUnion([1,2,3,4], [2,4,6,8]).length
-    console.log('length', arrayLength);
     expect(arrayLength).to.equal(6)
   })
 
