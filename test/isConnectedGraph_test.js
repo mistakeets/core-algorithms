@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import isConnectedGraph from '../src/isConnectedGraph'
 
-describe.only('isConnectedGraph()', function(){
+describe('isConnectedGraph()', function(){
   const graphA = {
     'a': ['b', 'c'],
     'b': ['a', 'd'],
